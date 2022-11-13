@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css"/>
-    <title>Portfolio Project</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style.css" />
+	<title>Portfolio Project</title>
 </head>
+
 <body>
-    <header class="topPage">
-        <h1>Patrick Straw</h1>
-        <nav class="links">
-            <ul>
-                <li>
-                    <a href="#aboutMe">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contactMe">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+	<header>
+		<h1>Patrick Straw</h1>
+		<img src="./assets/images/Photo-2.jpeg" class="imgMe"/>
+		<nav class="links">
+			<ul>
+				<li>
+					<a href="#aboutMe">About Me</a>
+				</li>
 
-    <section id="aboutMe">
-        <h2>
-            About Me!
-        </h2>
-    </section>
+				<li>
+					<a href="#work">Work</a>
+				</li>
 
-    <section id="work">
-        <h2>
-            Work
-        </h2>
-    </section>
-    
-    <secion id="contactMe">
-        <h2>
-            Contact Information
-        </h2>
-    </secion>
+				<li>
+					<a href="#contactMe">Contact Me</a>
+				</li>
+
+				<li>
+					<a href="#resume">Resume</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="aboutMeContent">
+		<aside id="aboutMe" class="sideBar">
+			<h2>
+				About Me!
+			</h2>
+		</aside>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime quidem eligendi qui ducimus in dolorum aliquid sed autem a quas dolorem excepturi, ipsa error suscipit laboriosam, optio ipsam tempora.
+			</p>
+	</section>
+
+	<section class="workContent">
+		<aside id="work" class="sideBar">
+			<h2>
+				My Work!
+			</h2>
+		</aside>
+
+		<section class="workContentImgs">
+			<img src="./assets/images/360.jfif"/>
+			<img src="./assets/images/360.jfif"/>
+			<img src="./assets/images/360.jfif"/>
+			<img src="./assets/images/360.jfif"/>
+			<img src="./assets/images/360.jfif"/>
+		</section>
+	</section>
+
+	<footer>
+		<aside id="contactMe" class="sideBar">
+			<h2>
+				Contact Me
+			</h2>
+		</aside>
+		<nav class="contactLinks">
+			<ul>
+				<li>555.555.5555</li>
+				<li>email@email.com</li>
+				<li>Github</li>
+				<li>Twitter</li>
+				<li>Spotify</li>
+			</ul>
+		</nav>
+	</footer>
 
 
 </body>
+
 </html>
