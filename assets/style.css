@@ -29,6 +29,23 @@ header h1{
 	margin: 10px 0 10px 0;
 }
 
+.links ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	
+}
+
+.links a {
+	border-bottom: 2px solid #92ccce;
+	color: #92ccce;
+	margin-right: 20px;
+	padding: 5px;
+	text-decoration: none;
+	
+}
+
+
 .banner {
 	display: flex;
 	align-items: center;
@@ -48,66 +65,44 @@ header h1{
 	top: 35%;
 }
 
-footer {
-	display: flex;
-	align-items: center;
-}
-
 .imgMe {
 	width: 250px;
 	height: 250px;
 	border-color: rgb(63, 5, 5);
 	border-style: groove;
-	border-radius: 150px;
+	border-radius: 125px;
 	margin-left: 20px;
 }
 
-.links ul {
-	display: flex;
-	justify-content: space-around;
-	list-style: none;
-	
-}
-
-.links a {
-	border-bottom: 2px solid #92ccce;
-	color: #92ccce;
-	margin-right: 20px;
-	padding: 0 10px 0 10px;
-	text-decoration: none;
-	
-}
-
 .sideBar {
-	display: flex;
-	font-size: 40px;
-	justify-content: center;
-	margin: 50px;
-	max-width: 140px;
-	padding-left: 150px;
-}
-
-.placeHolderName {
-	border-left: 5px solid blue;
-	margin: 25px 50px 0 0;
-}
-
-.placeHolderName p {
-	margin-left: 50px;
+	color: #445877;
+	font-size: 24px;
+	padding: 50px 50px 0 50px;
+	max-width: min-content;
+	margin-top: 50px;
+	text-align-last: end;
+	vertical-align: top;
+	border-right: 5px solid #6d7d96;
 }
 
 .aboutMeContent {
 	display: flex;
 }
 
+.placeHolderName {
+	margin: 50px 50px 0 0px;
+}
+
+.placeHolderName p {
+	margin-left: 50px;
+}
+
 .workContent {
 	display: flex;
-	justify-content: space-between;
 	margin-top: 50px
 }
 
 .workImgContainer {
-	border-left: 5px solid blue;
 	display: flex;
 	flex-flow: row wrap-reverse;
 }
@@ -117,12 +112,32 @@ footer {
 	margin: 10px 10px 10px 50px;
  }
 
- .contactLinks {
-	border-left: 5px solid blue;
+ footer {
 	display: flex;
+	align-items: center;
+}
+
+#contactMe {
+	padding-right: 17px;
+}
+ .contactLinks {
+	display: flex;
+	padding: 50px;
+	margin: 50px 0 50px 0px;
  }
 
  .contactLinks ul {
 	display: flex;
+	flex-flow: row wrap;
+	font-size: 20px;
+	justify-content: space-around;
 	list-style: none;
+}
+
+.contactLinks a {
+	border-bottom: 5px solid #92ccce;
+	color:#31343d;
+	margin-right: 100px;
+	padding: 5px;
+	text-decoration: none;
 }
