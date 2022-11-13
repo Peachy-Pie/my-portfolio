@@ -24,13 +24,28 @@ header {
 
 header h1{
 	background-color: #92ccce;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-	padding: 10px 10px 10px 100px;
+	color:#31343d;
+	padding: 5px 10px 5px 75px;
+	margin: 10px 0 10px 0;
 }
 
-h2 {
-	font-size: 50px;
+.banner {
+	display: flex;
+	align-items: center;
+	height: 300px;
+	width: 100%;
+	background-image: url(./images/bannerrainbow.avif);
+	background-size: cover;
+	background-position: center;
+	justify-content: space-between;
+}
+
+.banner h2 {
+	background-color: #92ccce;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+	margin-right: 100px;
+	top: 35%;
 }
 
 footer {
@@ -39,10 +54,12 @@ footer {
 }
 
 .imgMe {
-	width: 300px;
+	width: 250px;
+	height: 250px;
 	border-color: rgb(63, 5, 5);
 	border-style: groove;
 	border-radius: 150px;
+	margin-left: 20px;
 }
 
 .links ul {
@@ -63,6 +80,7 @@ footer {
 
 .sideBar {
 	display: flex;
+	font-size: 40px;
 	justify-content: center;
 	margin: 50px;
 	max-width: 140px;
@@ -99,7 +117,7 @@ footer {
 	margin: 10px 10px 10px 50px;
  }
 
- .contactlinks {
+ .contactLinks {
 	border-left: 5px solid blue;
 	display: flex;
  }
