@@ -70,7 +70,6 @@ header h1{
 .sideBar {
 	color: #445877;
 	display: flex;
-	font-size: 2vw;
 	justify-content: flex-end;
 	margin-right: 1%;
 	min-width: 20%;
@@ -93,8 +92,6 @@ header h1{
 
 .workContent {
 	display: flex;
-	justify-content:flex-start;
-	
 }
 
  .workImgContainer {
@@ -155,8 +152,11 @@ header h1{
 		font-size: 2vw;
 	}
 
-	.contactLinks {
-		display: flex;
+	.workContent {
+		font-size: 2vw;
+	}
+
+	footer {
 		font-size: 2vw;
 	}
 }
@@ -168,15 +168,6 @@ header h1{
 
 	.banner {
 		display: none;
-	}
-
-	.aboutMeContent {
-		font-size: 3vw;
-	}
-
-	.contactLinks {
-		display: flex;
-		font-size: 3vw;
 	}
 }
 
