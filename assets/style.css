@@ -2,17 +2,14 @@
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
-
 }
 
 :root {
 
 }
-
 body {
 	background-color: #eeeef7;
 	line-height: 1.5;
-
 }
 
 header {
@@ -29,11 +26,9 @@ header h1{
 	margin: 10px 0 10px 0;
 }
 
-.links ul {
-	display: flex;
-	justify-content: space-around;
+.links li {
+	display: inline;
 	list-style: none;
-	
 }
 
 .links a {
@@ -45,99 +40,94 @@ header h1{
 	
 }
 
-
 .banner {
 	display: flex;
-	align-items: center;
-	height: 300px;
+	align-items: flex-end;
 	width: 100%;
 	background-image: url(./images/bannerrainbow.avif);
 	background-size: cover;
 	background-position: center;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
 	justify-content: space-between;
+	margin-bottom: 2%;
 }
 
 .banner h2 {
 	background-color: #92ccce;
-	padding: 5px 10px 5px 10px;
-	position: relative;
-	margin-right: 100px;
-	top: 35%;
+	padding: 0 15px 0 15px;
+	margin: 10px 25px 10px 25px;
 }
 
 .imgMe {
-	width: 250px;
-	height: 250px;
+	width: 10%;
 	border-color: rgb(63, 5, 5);
 	border-style: groove;
 	border-radius: 125px;
-	margin-left: 20px;
 }
 
 .sideBar {
 	color: #445877;
-	font-size: 24px;
-	padding: 50px 50px 0 50px;
-	max-width: min-content;
-	margin-top: 50px;
-	text-align-last: end;
-	vertical-align: top;
-	border-right: 5px solid #6d7d96;
+	font-size: 30px;
+	padding: 20px 10px 20px 40px;
+	min-width: 200px;
+	max-width: 200px;
+	text-align: right;
+	margin-right: 10px;
 }
 
 .aboutMeContent {
 	display: flex;
+	margin-top: 2;
+	margin-bottom: 4%;
 }
 
 .placeHolderName {
-	margin: 50px 50px 0 0px;
+	border-left: 5px solid #6d7d96;
+	display: flex;
+	align-items: flex-start;
+	padding: 50px 0 50px 10px;
 }
 
-.placeHolderName p {
-	margin-left: 50px;
-}
 
 .workContent {
 	display: flex;
-	margin-top: 50px
+	margin-bottom: 4%;
 }
 
+
 .workImgContainer {
+	border-left: 5px solid #6d7d96;
 	display: flex;
 	flex-flow: row wrap-reverse;
+	justify-content: flex-start;
 }
 
  .workContentImg {
 	border: 5px solid #92ccce;
-	margin: 10px 10px 10px 50px;
+	margin: 10px 10px;
  }
 
  footer {
 	display: flex;
-	align-items: center;
-}
-
-#contactMe {
-	padding-right: 17px;
-}
- .contactLinks {
-	display: flex;
-	padding: 50px;
-	margin: 50px 0 50px 0px;
+	margin-bottom: 50px;
  }
 
- .contactLinks ul {
-	display: flex;
-	flex-flow: row wrap;
+ .contactLinks {
+	padding: 50px;
+	border-left: 5px solid #6d7d96;
+ }
+
+ .contactLinks li {
+	border-bottom: 5px solid #92ccce;
+	display: inline-block;
 	font-size: 20px;
-	justify-content: space-around;
 	list-style: none;
+	margin: 10px 50px 10px 50px;
+	padding: 5px;
 }
 
 .contactLinks a {
-	border-bottom: 5px solid #92ccce;
 	color:#31343d;
-	margin-right: 100px;
-	padding: 5px;
 	text-decoration: none;
 }
