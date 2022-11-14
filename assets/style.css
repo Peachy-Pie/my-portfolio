@@ -138,9 +138,39 @@ header h1{
 	display: inline-block;
 	list-style: none;
 	padding: 5px;
+	margin-left: 10px;
 }
 
 .contactLinks a {
 	color:#31343d;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+
+	header {
+		font-size: 2vw;
+	}
+	.aboutMeContent {
+		font-size: 2vw;
+	}
+
+	.contactLinks {
+		display: flex;
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	.aboutMeContent {
+		font-size: 3vw;
+	}
+
+	.contactLinks {
+		display: flex;
+		font-size: 3vw;
+	}
+}
+
+
