@@ -99,27 +99,39 @@ header h1{
 	display: grid;
 	grid-template-columns:repeat(16, 1fr);
 	margin-bottom: 50px;
-	max-width: 60%;
+	max-width: 65%;
  }
 
+ .workContentImg {
+	border: 5px solid #92ccce;
+	margin: 10px;
+	width: 100%;
+	object-fit: cover;
+ } 
+
  .topWorkImg { 
+	width: 100%;
+	position: relative;
 	grid-column: 1 / 16;
-	grid-row: 
  }
 
 .leftWorkImg {
+	position: relative;
 	grid-column: 1 / 8;
 }
 
 .rightWorkImg {
+	position: relative;
 	grid-column: 9 / 16;
 }
 
- .workContentImg {
-	width: 100%;
-	border: 5px solid #92ccce;
-	margin-left: 10px;
- } 
+.cardText {
+	background-color: #92ccce ;
+	bottom: 10%;
+	left: 1%;
+	padding: 1% 3% 1% 5%;
+	position: absolute;
+}
 
  footer {
 	display: flex;
@@ -144,20 +156,13 @@ header h1{
 }
 
 @media screen and (max-width: 768px) {
-
-	header {
-		font-size: 2vw;
-	}
-	.aboutMeContent {
+	* {
 		font-size: 2vw;
 	}
 
-	.workContent {
-		font-size: 2vw;
-	}
-
-	footer {
-		font-size: 2vw;
+	.cardText {
+		position: absolute;
+		bottom: 20%;
 	}
 }
 
