@@ -1,178 +1,189 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	padding: 0;
-	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* sets some variable for color and border for easy refactoring */
 :root {
---main-box-color: #92ccce;
---border-left-color: #6d7d96;
+  --main-box-color: #92ccce;
+  --border-left-color: #6d7d96;
 }
 
 body {
-	background-color: #eeeef7;
-	font-size: 1vw;
-	line-height: 1.5;
+  background-color: #eeeef7;
+  font-size: 1vw;
+  line-height: 1.5;
 }
 
 header {
-	align-items: center;
-	background-color: #31343d;
-	display: flex;
-	justify-content: space-between;
+  align-items: center;
+  background-color: #31343d;
+  display: flex;
+  justify-content: space-between;
 }
 
-header h1{
-	font-size: 2vw;
-	background-color: var(--main-box-color);
-	color: #31343d;
-	padding: 5px 10px 5px 75px;
-	margin: 15px 0 15px 0;
+header h1 {
+  font-size: 2vw;
+  background-color: var(--main-box-color);
+  color: #31343d;
+  padding: 5px 10px 5px 75px;
+  margin: 15px 0 15px 0;
 }
 
 .pageLinks li {
-	display: inline;
-	list-style: none;
+  display: inline;
+  list-style: none;
 }
 
 .pageLinks a {
-	border-bottom: 2px solid var(--main-box-color);
-	color: var(--main-box-color);
-	margin-right: 20px;
-	padding: 5px;
-	text-decoration: none;
-	
+  border-bottom: 2px solid var(--main-box-color);
+  color: var(--main-box-color);
+  margin-right: 20px;
+  padding: 5px;
+  text-decoration: none;
 }
 /* sets rainbow banner */
 .hero {
-	display: flex;
-	align-items: flex-end;
-	width: 100%;
-	background-image: url(./images/bannerrainbow.avif);
-	background-size: cover;
-	background-position: center;
-	border-bottom-left-radius: 100px;
-	border-top-left-radius: 100px;
-	justify-content: space-between;
-	margin-bottom: 2%;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  background-image: url(./images/bannerrainbow.avif);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  justify-content: space-between;
+  margin-bottom: 2%;
 }
-
-.hero h2 {
-	background-color: var(--main-box-color);
-	margin: 1%;
+/* textbox in hero */
+.subtitle {
+  background-color: var(--main-box-color);
+  font-weight: bold;
+  margin: 1%;
+  padding: 5px 20px;
 }
 /* styles image of myself in hero */
 .imgMe {
-	width: 10%;
-	border-color: rgb(63, 5, 5);
-	border-style: groove;
-	border-radius: 125px;
+  width: 10%;
+  border-color: rgb(63, 5, 5);
+  border-style: groove;
+  border-radius: 125px;
 }
 /* not a huge fan of this section in hindsight would have rather set my whole page as a grid but min-width sets side-bar so border in footer doesnt overlap with contact me*/
 .sideBar {
-	color: #445877;
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 1%;
-	min-width: 20%;
+  color: #445877;
+  display: flex;
+  font-size: 2vw;
+  justify-content: flex-end;
+  margin-right: 1%;
+  min-width: 20%;
 }
 /* sets About me to left of section */
 .aboutMeSection {
-	display: flex;
-	margin-top: 2%;
-	margin-bottom: 4%;
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .aboutMeParagraph {
-	border-left: 5px solid var(--border-left-color);
-	padding: 5px 10px 5px 10px;
+  border-left: 5px solid var(--border-left-color);
+  padding: 5px 10px 5px 10px;
 }
 
 /* creates a div to store grid and places work aside to the left*/
 .workSection {
-	display: flex;
+  display: flex;
 }
 /*sets up grid for the images of 'projects'*/
- .workImgContainer {
-	border-left: 5px solid var(--border-left-color);
-	display: grid;
-	grid-template-columns:repeat(16, 1fr);
-	margin-bottom: 50px;
-	max-width: 65%;
- }
+.workImgContainer {
+  border-left: 5px solid var(--border-left-color);
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  margin-bottom: 50px;
+  max-width: 65%;
+}
 /* sets image size so images fit right  */
- .workContentImg {
-	border: 5px solid var(--main-box-color);
-	margin: 10px;
-	width: 100%;
- } 
+
+.workContentImg {
+  border: 5px solid var(--main-box-color);
+  margin: 10px;
+  opacity: 0.75;
+  transition: all 0.75s ease;
+  width: 100%;
+}
+
+.workContentImg:hover {
+  opacity: 1;
+}
 /* start positions for images inside grid layout they are positioned relative to set card text to images */
- .topWorkImg { 
-	width: 100%;
-	position: relative;
-	grid-column: 1 / 16;
- }
+.topWorkImg {
+  width: 100%;
+  position: relative;
+  grid-column: 1 / 16;
+}
 
 .leftWorkImg {
-	position: relative;
-	grid-column: 1 / 8;
+  position: relative;
+  grid-column: 1 / 8;
 }
 
 .rightWorkImg {
-	position: relative;
-	grid-column: 9 / 16;
+  position: relative;
+  grid-column: 9 / 16;
 }
 /* end positions for images inside grid layout */
 /* sets a text banner/positions them for 'projects' */
 .cardText {
-	background-color: var(--main-box-color);
-	bottom: 10%;
-	left: 1%;
-	padding: 1% 3% 1% 5%;
-	position: absolute;
+  background-color: var(--main-box-color);
+  bottom: 10%;
+  left: 1%;
+  padding: 1% 3% 1% 5%;
+  position: absolute;
 }
 /* sets contact me to left of contact links */
- footer {
-	display: flex;
-	margin-bottom: 50px;
- }
+footer {
+  display: flex;
+  margin-bottom: 25px;
+}
 
- .contactLinks {
-	border-left: 5px solid var(--border-left-color);
- }
+.contactLinks {
+  border-left: 5px solid var(--border-left-color);
+}
 /* sets style and spacing between contact links */
- .contactLinks li {
-	border-bottom: 5px solid var(--main-box-color);
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
-	margin-left: 25px;
+.contactLinks li {
+  border-bottom: 5px solid var(--main-box-color);
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  margin-left: 25px;
 }
 
 .contactLinks a {
-	color:#31343d;
-	text-decoration: none;
+  color: #31343d;
+  text-decoration: none;
 }
 /* makes page look better for phones/tablets */
 @media screen and (max-width: 768px) {
-	* {
-		font-size: 2vw;
-	}
+  * {
+    font-size: 2vw;
+  }
 
-	.cardText {
-		position: absolute;
-		bottom: 20%;
-	}
+  .workImgContainer {
+    display: block;
+  }
+
+  .cardText {
+    position: absolute;
+    bottom: 20%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.workImgContainer {
-		display: block;
-	}
+  .hero {
+    display: none;
+  }
 
-	.banner {
-		display: none;
-	}
+  .workContentImg {
+    opacity: 1;
+  }
 }
-
-
