@@ -3,10 +3,12 @@
 	padding: 0;
 	margin: 0;
 }
-
+/* sets some variable for color and border for easy refactoring */
 :root {
-
+--main-box-color: #92ccce;
+--border-left-color: #6d7d96;
 }
+
 body {
 	background-color: #eeeef7;
 	font-size: 1vw;
@@ -22,27 +24,27 @@ header {
 
 header h1{
 	font-size: 2vw;
-	background-color: #92ccce;
-	color:#31343d;
+	background-color: var(--main-box-color);
+	color: #31343d;
 	padding: 5px 10px 5px 75px;
-	margin: 10px 0 10px 0;
+	margin: 15px 0 15px 0;
 }
 
-.links li {
+.pageLinks li {
 	display: inline;
 	list-style: none;
 }
 
-.links a {
-	border-bottom: 2px solid #92ccce;
-	color: #92ccce;
+.pageLinks a {
+	border-bottom: 2px solid var(--main-box-color);
+	color: var(--main-box-color);
 	margin-right: 20px;
 	padding: 5px;
 	text-decoration: none;
 	
 }
-
-.banner {
+/* sets rainbow banner */
+.hero {
 	display: flex;
 	align-items: flex-end;
 	width: 100%;
@@ -55,18 +57,18 @@ header h1{
 	margin-bottom: 2%;
 }
 
-.banner h2 {
-	background-color: #92ccce;
+.hero h2 {
+	background-color: var(--main-box-color);
 	margin: 1%;
 }
-
+/* styles image of myself in hero */
 .imgMe {
 	width: 10%;
 	border-color: rgb(63, 5, 5);
 	border-style: groove;
 	border-radius: 125px;
 }
-
+/* not a huge fan of this section in hindsight would have rather set my whole page as a grid but min-width sets side-bar so border in footer doesnt overlap with contact me*/
 .sideBar {
 	color: #445877;
 	display: flex;
@@ -74,41 +76,37 @@ header h1{
 	margin-right: 1%;
 	min-width: 20%;
 }
-
-.aboutMeContent {
+/* sets About me to left of section */
+.aboutMeSection {
 	display: flex;
 	margin-top: 2%;
 	margin-bottom: 4%;
 }
 
-.placeHolderName {
-	border-left: 5px solid #6d7d96;
-	display: flex;
-	align-items: flex-start;
-	padding: 0 1%;
-	margin-right: 2%;
+.aboutMeParagraph {
+	border-left: 5px solid var(--border-left-color);
+	padding: 5px 10px 5px 10px;
 }
 
-
-.workContent {
+/* creates a div to store grid and places work aside to the left*/
+.workSection {
 	display: flex;
 }
-
+/*sets up grid for the images of 'projects'*/
  .workImgContainer {
-	border-left: 5px solid #6d7d96;
+	border-left: 5px solid var(--border-left-color);
 	display: grid;
 	grid-template-columns:repeat(16, 1fr);
 	margin-bottom: 50px;
 	max-width: 65%;
  }
-
+/* sets image size so images fit right  */
  .workContentImg {
-	border: 5px solid #92ccce;
+	border: 5px solid var(--main-box-color);
 	margin: 10px;
 	width: 100%;
-	object-fit: cover;
  } 
-
+/* start positions for images inside grid layout they are positioned relative to set card text to images */
  .topWorkImg { 
 	width: 100%;
 	position: relative;
@@ -124,37 +122,38 @@ header h1{
 	position: relative;
 	grid-column: 9 / 16;
 }
-
+/* end positions for images inside grid layout */
+/* sets a text banner/positions them for 'projects' */
 .cardText {
-	background-color: #92ccce ;
+	background-color: var(--main-box-color);
 	bottom: 10%;
 	left: 1%;
 	padding: 1% 3% 1% 5%;
 	position: absolute;
 }
-
+/* sets contact me to left of contact links */
  footer {
 	display: flex;
 	margin-bottom: 50px;
  }
 
  .contactLinks {
-	border-left: 5px solid #6d7d96;
+	border-left: 5px solid var(--border-left-color);
  }
-
+/* sets style and spacing between contact links */
  .contactLinks li {
-	border-bottom: 5px solid #92ccce;
+	border-bottom: 5px solid var(--main-box-color);
 	display: inline-block;
 	list-style: none;
 	padding: 5px;
-	margin-left: 10px;
+	margin-left: 25px;
 }
 
 .contactLinks a {
 	color:#31343d;
 	text-decoration: none;
 }
-
+/* makes page look better for phones/tablets */
 @media screen and (max-width: 768px) {
 	* {
 		font-size: 2vw;
